@@ -28,9 +28,9 @@ func init() {
 // Middleware creates a Z/X/Y tileserver backed by a local or remote bucket of PMTiles archives.
 type Middleware struct {
 	Bucket    string `json:"bucket"`
+	Prefix 	  string `json:"prefix"`
 	CacheSize int    `json:"cache_size"`
 	PublicURL string `json:"public_url"`
-	Prefix string `json:"prefix"`
 	logger    *zap.Logger
 	server    *pmtiles.Server
 }
