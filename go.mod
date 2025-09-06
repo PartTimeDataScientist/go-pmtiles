@@ -1,4 +1,4 @@
-module github.com/protomaps/go-pmtiles
+module github.com/PartTimeDataScientist/go-pmtiles
 
 go 1.22.7
 
